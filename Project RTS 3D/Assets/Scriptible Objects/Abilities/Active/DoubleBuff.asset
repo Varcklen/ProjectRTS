@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b584fc2c68b7ab4c973d7c43a0665ea, type: 3}
+  m_Name: DoubleBuff
+  m_EditorClassIdentifier: 
+  ability:
+    name: DoubleBuff
+    isHide: 0
+    icon: {fileID: 21300000, guid: 1fa592f7f78838e479f01a195dfa5b96, type: 3}
+    description: Add 2 armor to target on time. After that, add 4 attack on time.
+    levels: 1
+    buttonPosition: 0
+    manaCost: 0
+    abilityTarget: 1
+    delay: 0
+    cooldown: 1
+    targetType: 33
+    distance: 600
+    area: 0
+    component: {fileID: 0}
+    abilityData: {fileID: 0}
+    isPassive: 0
+    currentLevel: 1
+  abilityStats:
+    buffOne: {fileID: 11400000, guid: de3c73d328a51464ab30d36933d42afa, type: 2}
+    timeOne: 4
+    armorBonus: 2
+    buffTwo: {fileID: 11400000, guid: df5b6e186ffef7545af3e0bad9b8cc9f, type: 2}
+    timeTwo: 6
+    attackBonus: 4

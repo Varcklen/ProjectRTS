@@ -1,0 +1,36 @@
+using UnityEngine;
+using Project.AbilitySystem;
+
+[CreateAssetMenu(fileName = "New #SCRIPTNAME#", menuName = "Custom/Ability/Passive/#SCRIPTNAME#")]
+public class #SCRIPTNAME# : PassiveAbility<Ability_#SCRIPTNAME#, #SCRIPTNAME#_Stats>
+{
+    public override void Init(ObjectInfo caster, AbilityObject ability)
+    {
+        InitComponent(caster, ability);
+    }
+
+}
+
+[System.Serializable]
+public class #SCRIPTNAME#_Stats : IStatsSO<#SCRIPTNAME#_Stats>
+{
+    public void SetStatsFromSO(#SCRIPTNAME#_Stats so)
+    {
+        #NOTRIM#
+    }
+}
+
+public class Ability_#SCRIPTNAME# : MonoAbility<#SCRIPTNAME#_Stats>, IPassiveAbilityInit
+{
+    private UnitInfo caster;
+
+    private AbilityObject ability;
+
+    //Use abilityStats to get data from #SCRIPTNAME#_Stats
+    public void Init(UnitInfo caster, AbilityObject ability)
+    {
+        this.caster = caster;
+        this.ability = ability;
+    }
+
+}

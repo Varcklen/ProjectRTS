@@ -1,0 +1,45 @@
+using UnityEngine;
+using Project.AbilitySystem;
+
+[CreateAssetMenu(fileName = "New #SCRIPTNAME#", menuName = "Custom/Ability/Active/#SCRIPTNAME#")]
+public class #SCRIPTNAME# : ActiveAbility<Ability_#SCRIPTNAME#, #SCRIPTNAME#_Stats>
+{
+    public override void Init(ObjectInfo caster, AbilityObject ability)
+    {
+        InitComponent(caster, ability);
+    }
+
+    public override void Use(UseParams p)
+    {
+        UseComponent(p);
+    }
+}
+
+[System.Serializable]
+public class #SCRIPTNAME#_Stats : IStatsSO<#SCRIPTNAME#_Stats>
+{
+    public void SetStatsFromSO(#SCRIPTNAME#_Stats so)
+    {
+        #NOTRIM#
+    }
+}
+
+public class Ability_#SCRIPTNAME# : MonoAbility<#SCRIPTNAME#_Stats>, IActiveAbilityInit
+{
+    private UnitInfo caster;
+
+    private AbilityObject ability;
+
+    //Use abilityStats to get data from #SCRIPTNAME#_Stats
+    public void Init(UnitInfo caster, AbilityObject ability)
+    {
+        this.caster = caster;
+        this.ability = ability;
+    }
+
+    public void Use(UseParams param)
+    {
+        #NOTRIM#
+    }
+
+}

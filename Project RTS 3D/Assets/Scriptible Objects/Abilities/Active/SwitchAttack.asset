@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 790e0ff26a39ecb4aa13ddd221403c15, type: 3}
+  m_Name: SwitchAttack
+  m_EditorClassIdentifier: 
+  ability:
+    name: Switch Attack
+    isHide: 0
+    icon: {fileID: 21300000, guid: cff213bccf7e2d94fb444197bf14b5cc, type: 3}
+    description: Changes the attack mode.
+    levels: 1
+    buttonPosition: 0
+    manaCost: 0
+    abilityTarget: 0
+    delay: 0
+    cooldown: 5
+    targetType: 0
+    distance: 0
+    area: 0
+    component: {fileID: 0}
+    abilityData: {fileID: 0}
+    isPassive: 0
+    currentLevel: 1

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b728022e52729c445a216a5456d228f8, type: 3}
+  m_Name: Slam
+  m_EditorClassIdentifier: 
+  ability:
+    name: Slam
+    isHide: 0
+    icon: {fileID: 21300000, guid: 07b3d28e2c2ec3843aa7e2e44b9b4f05, type: 3}
+    description: Deal damage on area.
+    isUpgraded: 0
+    upgradeLimit: 1
+    buttonPosition: 0
+    cost: 0
+    costType: 0
+    abilityTarget: 2
+    delay: 0
+    cooldown: 1
+    targetType: 513
+    distance: 600
+    area: 10
+    component: {fileID: 0}
+    abilityData: {fileID: 0}
+    isPassive: 0
+    level: 1

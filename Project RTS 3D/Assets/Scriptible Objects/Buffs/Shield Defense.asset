@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7ee2bd02e1a8a14cb1cb49483b8270c, type: 3}
+  m_Name: Shield Defense
+  m_EditorClassIdentifier: 
+  buff:
+    name: Shield Defense
+    icon: {fileID: 21300000, guid: 21ee8c2bdeb12d0478c845319549b3d0, type: 3}
+    description: The unit's armor has been increased.
+    outlineColor: 1
+    isDispelled: 1
+    buffData: {fileID: 0}

@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6147768f47ba01646b4b4f2962cba8e7, type: 3}
+  m_Name: Knight
+  m_EditorClassIdentifier: 
+  stats:
+    name: Knight
+    icon: {fileID: 21300000, guid: 7a74b20c40a7f574d9e6d4e2383022b4, type: 3}
+    description: Just a knight.
+    maxHealth: 10
+    maxMana: 0
+    healthRegeneration: 0
+    manaRegeneration: 0
+    armor: 1
+    spellPower: 0
+    movementSpeed: 15
+    angularSpeed: 180
+    inventoryLimit: 0
+    inventoryData: {fileID: 0}
+    attack:
+      damage: 5
+      attackType: 0
+      attackStyle: 1
+      attackState: 0
+      attackCooldown: 1
+      attackDelay: 0.7
+      range: 40
+      aggroRange: 500
+      projectile:
+        model: 
+        speed: 0
+        arcAngle: 0
+        startDeviation: {x: 0, y: 0, z: 0}
+  objectType: 1
+  unitPrefab: Unit\Minion\Knight
+  abilities:
+  - {fileID: 11400000, guid: 749d40a57ad21e6478f0a6d0f7cf1870, type: 2}
+  - {fileID: 11400000, guid: 824d7d72a2509544b8a8e3b6539c1ef6, type: 2}

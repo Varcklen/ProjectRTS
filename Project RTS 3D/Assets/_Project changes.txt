@@ -1,0 +1,473 @@
+Varcklen. 26.10.2021
+
+Changes:
+_____________________________
+
+- Orc model has been added for some tests.
+
+- Added Animator Override Controller, which allows you to use different animations using the same Animator Controller.
+
+//Note: The orc "hovers" above the ground. Orc's physical positions work correctly. It seems the problem is in the model itself.
+
+
+Varcklen. 25.10.2021
+
+Changes:
+_____________________________
+
+- Floating damage text is now displayed correctly if there is a shield on the target.
+
+- Unit prefabs are optimized for Prefab Variants.
+
+
+Varcklen. 20.10.2021
+
+Changes:
+_____________________________
+
+- Improvement and completion of the Projectile.cs script.
+
+
+Varcklen. 19.10.2021
+
+Changes:
+_____________________________
+
+- Added new methods for UnitInfo.cs: Hide, Unhide, Destroy, TurnToSide and others.
+
+- Fixed a small bug in the InventoryManager.
+
+- Animation optimization.
+
+- Presumably fixed bug in AttackManager.
+
+- Silence and stun have been implemented.
+
+
+Varcklen. 18.10.2021
+
+Changes:
+_____________________________
+
+- The scripts InventoryManager.cs and AttackManager.cs have been optimized.
+
+- An attempt was made to work with the model and animation.
+
+
+Varcklen. 17.10.2021
+
+Changes:
+_____________________________
+
+- An attempt was made to optimize PlayerInfo.cs.
+
+- Ability cost in gold now works.
+
+- Improved target selection when using area abilities.
+
+- Added various methods to UnitInfo.cs common to all units (IsUnitAlive, IsPlayerOwnerToUnit, ChangeOwnerPlayer and others).
+
+- All units have been moved to the GameObject responsible for the unit.
+
+
+Varcklen. 16.10.2021
+
+Changes:
+_____________________________
+
+- The ProjectileInfo.cs script has been improved.
+
+- Added critical damage and dodge. Floating text has been adapted for the new parameters.
+
+- Some scripts have been optimized.
+
+- Magic damage abilities now work with spell power.
+
+- HP, MP Bars now smoothly regenerate health, shield and mana.
+
+- Added a feature to target enemies and allies.
+
+- UI and controls now work correctly when selecting units outside of your control.
+
+
+Varcklen. 14.10.2021
+
+Changes:
+_____________________________
+
+- Added world health/shield/mana bars.
+
+- Fixed a bug with displaying cooldown of abilities.
+
+- Added floating text when taking damage.
+
+
+Varcklen. 13.10.2021
+
+Changes:
+_____________________________
+
+- Added squad management interface.
+
+- The scripts from the UnitSelectionManager folder have changed slightly.
+
+- The GameEventManager.cs script has been removed and parts of it have been moved to the required parts of the code.
+
+- Implemented invulnerability.
+
+
+Varcklen. 12.10.2021
+
+Changes:
+_____________________________
+
+- Now buttons 0-9 are not displayed as Alpha0-9, but as regular numbers.
+
+- Added dynamic change of description for items.
+
+- Added new armor calculation.
+
+- Now strength, agility and intelligence can increase the secondary parameters of the hero (health, mana, attack, and so on).
+
+
+CKH. 11.10.2021
+
+Changes:
+_____________________________
+
+- Units will now only show abilities when you click on them if you are the owner
+
+- Units will have their ownership set based on player ID and ActorID of the client's Photon Connection
+
+- Peasant and Rogue have thier PhotonView ownership set to "TakeOver", which means client can take control
+	- This may need to change in the future to "Request" so that Hackers cannot just steal control of units and ruin games
+
+
+Varcklen. 11.10.2021
+
+Changes:
+_____________________________
+
+- Now abilities can be level "0", at which they are not active and can be upgraded.
+
+- The cooldown is now displayed correctly when upgrading the ability.
+
+- Now the improvement of abilities can be turned off by clicking on "-".
+
+- Tooltip now changes when upgrading an ability and displays bonuses for improving the ability.
+
+- The icons for the minimap have been changed. They are now a green circle (heroes), a blue star (minions), and an orange hexagon (bosses).
+
+- Added health and mana regeneration.
+
+
+Varcklen. 10.10.2021
+
+Changes:
+_____________________________
+
+- Improved error response in the AbilitySlot.cs.
+
+- Added a feature to dynamically change the descriptions of abilities depending on level, spell power and luck (Made in EnergyShield ability).
+
+
+CKH. 07.10.2021
+
+Changes:
+_____________________________
+
+- Added null checks in AbilitySlot.cs in order to fix a bug where the Unit UI would not appear when clicking on a unit in Standalone builds
+
+
+Varcklen. 06.10.2021
+
+Changes:
+_____________________________
+
+- For hero units, a feature has been added to improve abilities for upgrade points.
+
+- Now UI elements for armor, attack, spell power, luck, STR, AGI and INT are updated when these parameters are changed.
+
+
+Varcklen. 05.10.2021
+
+Changes:
+_____________________________
+
+- The tooltip script has been optimized.
+
+- Added tooltip for unit parameters on the parameters panel.
+
+- Added the ability to change the movement speed of a unit and its angular speed. The base acceleration of units has been changed.
+
+- Changed the top UI panel. Removed resource - stone.
+
+- Added buttons to activate enable menu and chat history.
+
+- For the hero (abilityUpgradePoint) and abilities (isUpgraded & upgradeLimit), parameters have been added that are responsible for points for improving abilities and the level of abilities.
+
+- Added support for a secondary resource - shield. The shield is similar to the one in Boss Battle, but no longer has lite time.
+
+
+CKH. 04.10.2021
+
+Changes:
+_____________________________
+
+- Added braces for if statements in a few files
+
+- Added tests for InventoryManager
+
+- Added some code changes to UnitInfo.cs and ItemInfo.cs to make Unit Testing those classes easier
+
+
+CKH. 03.10.2021
+
+Changes:
+_____________________________
+
+- Added some basic Unit Tests for UnitInfo and AbilityManager
+
+- Added braces for if statements in UnitInfo.cs
+
+
+Varcklen. 03.10.2021
+
+Changes:
+_____________________________
+
+- Changed UI with information about units and items.
+
+- Added correct description for item tooltip.
+
+
+Varcklen. 02.10.2021
+
+Changes:
+_____________________________
+
+- Added a new type of units: heroes.
+
+- Added new parameters for units.
+
+- Now you can not change the parameters of units without the included variable "unique".
+
+- Added choice of resource type for ability.
+
+
+Varcklen. 01.10.2021
+
+Changes:
+_____________________________
+
+- Added new namespace for abilities (using Project.AbilitySystem).
+
+- Added new script templates.
+
+
+Varcklen. 27.09.2021
+
+Changes:
+_____________________________
+
+- Fixed an issue that prevented the data from being serialized from the Scriptible Object for abilities.
+
+- Added support for creating custom templates for scripts (Create/Custom Script).
+
+- Made some small code optimization.
+
+- Fixed a bug with incorrectly working ticks in buffs.
+
+
+Varcklen. 23.09.2021
+
+Changes:
+_____________________________
+
+- Charge abilities have been optimized.
+
+- Scripts have been optimized and namespaces have been added.
+
+- Work has begun on the Damage System.
+
+- Ability implementation has been improved.
+
+
+Varcklen. 22.09.2021
+
+Changes:
+_____________________________
+
+- An attempt was made to add multiplayer. The attempt was successful, but I decided to postpone the development of multiplayer for later.
+
+- Added completely working Buff System.
+
+- Fixed an issue that caused Repeated Attack Orders to stop abilities cooldowns.
+
+
+Varcklen. 20.09.2021
+
+Changes:
+_____________________________
+
+- The Inventory System is complete. 
+
+- Added a feature for using abilities by items.
+
+- Added a feature to create abilities that start to work and finish working while they are on a unit (regardless of whether they are on a unit or in a unit's item).
+
+- Added removal of an item from inventory.
+
+- Added item slot moving.
+
+
+Varcklen. 18.09.2021
+
+Changes:
+_____________________________
+
+- I continue to work on the UI for the inventory, as well as the interaction of items with the inventory.
+
+
+Varcklen. 17.09.2021
+
+Changes:
+_____________________________
+
+- Started work on the Item and Inventory System.
+
+- ObjectInfo has been redesigned. Now all information about units is stored in UnitInfo, for items: ItemInfo, and general information in ObjectInfo.
+
+
+Varcklen. 15.09.2021
+
+Changes:
+_____________________________
+
+- Added tooltip for abilities. It will need to be visually improved in the future.
+
+- Abilities can now be placed on different slots (from 0 to 15).
+
+- Added mana.
+
+- Added cooldown duration text on abilities.
+
+
+Varcklen. 14.09.2021
+
+Changes:
+_____________________________
+
+- Minor code optimization has been done.
+
+- Attack now reloads correctly.
+
+
+Varcklen. 12.09.2021
+
+Changes:
+_____________________________
+
+- Added target type selection for target and area abilities.
+
+- Removed some scripts, made specifically for units, as methods have been moved to abilities.
+
+- It is planned to move the "Node Manager" script into the ability.
+
+
+Varcklen. 11.09.2021
+
+Changes:
+_____________________________
+
+- Ability System reconfigured. Passive abilities can now be created.
+
+- Peasant component has been moved to abilities. This component is no longer needed.
+
+- Harvest ability is combined into Deliver ability.
+
+
+Varcklen. 07.09.2021
+
+Changes:
+_____________________________
+
+- Changed creation of buttons for abilities.
+
+- Added the ability to remove, add and replace abilities.
+
+
+Varcklen. 06.09.2021
+
+Changes:
+_____________________________
+
+- Added Harvest ability, which does the same job as Harvest in the Peasanr class. Deliver in Peasant is temporarily partially out of service.
+
+
+Varcklen. 04.09.2021
+
+Changes:
+_____________________________
+
+- Added target selection by area, ability cooldown and pre-cast delay.
+
+
+Varcklen. 03.09.2021
+
+Changes:
+_____________________________
+
+- Reworked the Ability System. 
+
+- Added support for target abilities (next step is area targeting abilities).
+
+- Part of the code has been updated and optimized.
+
+
+Varcklen. 01.09.2021
+
+Changes:
+_____________________________
+
+- The Ability System was made. May be improved in the future.
+
+
+Varcklen. 30.08.2021
+
+Changes:
+_____________________________
+
+- Attack Manager has been optimized. All the code related to the combat system has been moved from ObjectInfo to Attack Manager.
+
+- Work has begun on abilities and buttons.
+
+
+Varcklen. 28.08.2021
+
+Changes:
+_____________________________
+
+- Added Melee and Range attacks.
+
+- Rogues now have range attack.
+
+- Added 3 attack modes: Aggressive, Defensive and Stand. 
+
+- The combat system has been moved from Attack Manager to Object Info.
+
+
+Varcklen. 27.08.2021
+
+Changes:
+_____________________________
+
+- Partially moved RightClick() from Peasant.cs to ActionList.cs.
+
+- Added delegates for Move() and AttackMelee()/AttackRange() in ObjectInfo.cs.
+
+- Added an Attack Manager (Still in process).
+
+- Added target attack selection in Attack Manager. The attack itself has not yet been realized yet.
+
+- Added a Player Manager. It stores information about the players and the players themselves (Audio Listener and cameras in non-Player01 players were disabled, as they load the system).

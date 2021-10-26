@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6147768f47ba01646b4b4f2962cba8e7, type: 3}
+  m_Name: Peasant
+  m_EditorClassIdentifier: 
+  stats:
+    name: Peasant
+    icon: {fileID: 21300000, guid: 1fa592f7f78838e479f01a195dfa5b96, type: 3}
+    description: Usual worker.
+    maxHealth: 10
+    maxMana: 100
+    healthRegeneration: 0.2
+    manaRegeneration: 1
+    armor: 1
+    spellPower: 0
+    movementSpeed: 8
+    angularSpeed: 180
+    inventoryLimit: 3
+    inventoryData: {fileID: 11400000, guid: eea4f5c362aae6849944269b3642a98f, type: 2}
+    attack:
+      damage: 4
+      attackType: 0
+      attackStyle: 1
+      attackState: 0
+      attackCooldown: 2
+      attackDelay: 0.5
+      range: 40
+      aggroRange: 600
+      projectile:
+        model: 
+        speed: 0
+        arcAngle: 0
+        startDeviation: {x: 0, y: 0, z: 0}
+  objectType: 1
+  unitPrefab: Unit\Minion\Peasant
+  abilities:
+  - {fileID: 11400000, guid: 749d40a57ad21e6478f0a6d0f7cf1870, type: 2}
+  - {fileID: 11400000, guid: 544c8d230bae9bc43a97f8843344ef64, type: 2}
+  - {fileID: 11400000, guid: 36fb838aa31e70c428ce90ce076f0905, type: 2}
+  - {fileID: 11400000, guid: 6582d9a8f3afea340a4ca8340267b912, type: 2}
+  - {fileID: 11400000, guid: 161ca6e477adc3c448a97da7b52357fc, type: 2}
+  - {fileID: 11400000, guid: 824d7d72a2509544b8a8e3b6539c1ef6, type: 2}
+  - {fileID: 11400000, guid: fd13c2b1b03d93a44a9fe980bda7b1ec, type: 2}

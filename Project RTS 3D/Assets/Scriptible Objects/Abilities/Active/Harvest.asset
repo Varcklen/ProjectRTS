@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ae1a3783a02b474b895fcf0c3aa49f8, type: 3}
+  m_Name: Harvest
+  m_EditorClassIdentifier: 
+  ability:
+    name: Harvest
+    isHide: 0
+    icon: {fileID: 21300000, guid: 8a2ea8cf3c2c5594d8138246afe6a947, type: 3}
+    description: The unit goes to extract a resource from a node.
+    levels: 1
+    buttonPosition: 0
+    manaCost: 0
+    abilityTarget: 1
+    delay: 0
+    cooldown: 1
+    targetType: 4
+    distance: 0
+    area: 0
+    component: {fileID: 0}
+    abilityData: {fileID: 0}
+    isPassive: 0
+    currentLevel: 1
+  abilityStats:
+    deliverName: Deliver
+    deliverSprite: {fileID: 21300000, guid: a981c8066e929a94a864b98ab36207a4, type: 3}
+    deliverDecription: Searches for the nearest collector nearby to assign a resource.
+    collectorType: 8
+    harvestPerTick: 1
+    maxHeldResource: 5
+    nodeFindArea: 600
+    harvestTime: 1
